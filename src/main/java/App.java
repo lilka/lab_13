@@ -12,7 +12,7 @@ public class App implements Runnable
 
     public void run() {
 
-        JFrame mainFrame = new JFrame("Billboard Panel");
+        JFrame mainFrame = new JFrame("JMX Panel");
         mainFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
         AdDisplayer displayer = new AdDisplayer();

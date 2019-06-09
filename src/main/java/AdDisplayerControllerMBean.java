@@ -1,6 +1,6 @@
 public interface AdDisplayerControllerMBean {
 
-    public void changeTextAdd(String text);
+    public void changeTextAdd(String text, int numb);
 
     public void changeTime(int time);
 

@@ -11,9 +11,9 @@ public class AdDisplayerController extends NotificationBroadcasterSupport implem
 
     }
 
-    public void changeTextAdd(String text) {
+    public void changeTextAdd(String text, int numb) {
         if(adDisplayer != null){
-            this.adDisplayer.setAddText(text);
+            this.adDisplayer.setAddText(text, numb);
         }
     }
 
@@ -25,7 +25,7 @@ public class AdDisplayerController extends NotificationBroadcasterSupport implem
 
     public void turnDisplayerOff() {
         if(adDisplayer != null){
-            this.adDisplayer.turnOfAdDisplayer();
+            this.adDisplayer.turnOffAdDisplayer();
         }
 
     }

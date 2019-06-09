@@ -8,8 +8,8 @@ import java.util.List;
 import java.util.Random;
 
 public class AdDisplayer extends JPanel {
-    private static final Color OFF_COLOR = Color.LIGHT_GRAY;
-    private static final Color ON_COLOR = Color.PINK;
+    private static final Color off = Color.RED;
+    private static final Color on = Color.GREEN;
 
     private int currentAdd = -1;
     private int TIME = 1000;
@@ -24,11 +24,12 @@ public class AdDisplayer extends JPanel {
     public AdDisplayer() {
         super();
         textPane = new JLabel();
+        textPane.setFont(new Font("Serif", Font.PLAIN, 30));
 
         setLayout(new FlowLayout());
         addsList = new ArrayList<Ad>();
         for (int i = 0; i < 6; i++) {
-            addsList.add(new Ad("Add number " + i));
+            addsList.add(new Ad("Ad number " + i));
         }
 
         for (int i = 0; i < 6; i++) {
@@ -40,8 +41,8 @@ public class AdDisplayer extends JPanel {
 
         adDisplayerChangeEventListeners = new LinkedList<AdDisplayerChangeEventListener>();
         this.setBorder(BorderFactory.createLineBorder(Color.BLACK));
-        this.setPreferredSize(new Dimension(500,400));
-        this.setBackground(ON_COLOR);
+        this.setPreferredSize(new Dimension(500,100));
+        this.setBackground(on);
         this.add(textPane);
 
          timer = new Timer(TIME, new ActionListener() {
@@ -69,8 +70,8 @@ public class AdDisplayer extends JPanel {
 
     }
 
-    public void setAddText(String text) {
-        if (currentAdd != -1 && !addsList.isEmpty()) {
+    public void setAddText(String text, int adNumb) {
+        if (currentAdd != -1 && !addsList.isEmpty() && adNumb>-1 && adNumb<addsList.size()) {
             addsList.get(currentAdd).setText(text);
             generateDisplayerChangedEvent(currentAdd, true, true, false);
             textPane.setText(addsList.get(currentAdd).getText());
@@ -80,18 +81,18 @@ public class AdDisplayer extends JPanel {
 
     public void turnOnAdDisplayer() {
         Color currentColor = getBackground();
-        if (currentColor.equals(OFF_COLOR)) {
-            setBackground(ON_COLOR);
+        if (currentColor.equals(off)) {
+            setBackground(on);
             textPane.setText(addsList.get(0).getText());
             generateDisplayerChangedEvent(currentAdd, true, false, false);
             timer.start();
         }
     }
 
-    public void turnOfAdDisplayer() {
+    public void turnOffAdDisplayer() {
         Color currentColor = getBackground();
-        if (currentColor.equals(ON_COLOR)) {
-            setBackground(OFF_COLOR);
+        if (currentColor.equals(on)) {
+            setBackground(off);
             textPane.setText(null);
             timer.stop();
             generateDisplayerChangedEvent(currentAdd, false, false, false);
