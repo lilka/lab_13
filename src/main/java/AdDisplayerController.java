@@ -6,6 +6,9 @@ public class AdDisplayerController extends NotificationBroadcasterSupport implem
 
     private AdDisplayer adDisplayer;
     private long SEQUENCE_NUMBER = 1;
+    private boolean isTurnOn=true;
+    private boolean timeWasChanged;
+    private boolean textWasChanged;
 
     public void AdDisplayerController(){
 
@@ -18,33 +21,28 @@ public class AdDisplayerController extends NotificationBroadcasterSupport implem
     }
 
 
-
     public void changeTime(int time) {
         this.adDisplayer.changeTime(time);
+        this.timeWasChanged=true;
     }
 
     public void turnDisplayerOff() {
         if(adDisplayer != null){
             this.adDisplayer.turnOffAdDisplayer();
+            this.isTurnOn=false;
         }
 
     }
 
     public void setAdDisplayer(AdDisplayer displayer) {
         this.adDisplayer = displayer;
-        this.adDisplayer.addAdDisplayerChangeEventListener(new AdDisplayerChangeEventListener() {
-
-            public void onDisplayerChangedEvent(AdDisplayerChangeEvent e) {
-                createAndSendNotification(e);
-
-            }
-        });
     }
 
 
     public void turnDisplayerOn() {
         if(adDisplayer != null){
             this.adDisplayer.turnOnAdDisplayer();
+            this.isTurnOn=true;
         }
     }
 
@@ -55,26 +53,6 @@ public class AdDisplayerController extends NotificationBroadcasterSupport implem
 
     }
 
-
-    protected void createAndSendNotification(AdDisplayerChangeEvent e) {
-        Notification notification = new Notification(
-                Notification.class.toString(),
-                e.getSource(),
-                SEQUENCE_NUMBER++,
-                System.currentTimeMillis(),
-                "Ad displayer" + e.getSource() + (e.isWasTurnedOn() ? " was turned on." : " was turned off") +  (e.isTextWasChanged() ? " text was changed." : "") + (e.isTimeWasChanged() ? " time was changed " : ""));
-        super.sendNotification(notification);
-    }
-
-    public void setDisplayer(AdDisplayer displayer) {
-        this.adDisplayer = displayer;
-        this.adDisplayer.addAdDisplayerChangeEventListener(new AdDisplayerChangeEventListener() {
-
-            public void onDisplayerChangedEvent(AdDisplayerChangeEvent e) {
-                    createAndSendNotification(e);
-            }
-        });
-    }
 
     @Override
     public MBeanNotificationInfo[] getNotificationInfo() {

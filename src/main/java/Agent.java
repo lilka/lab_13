@@ -10,13 +10,13 @@ public class Agent {
 
         mbs = ManagementFactory.getPlatformMBeanServer();
 
-        AdDisplayerController billboardController = new AdDisplayerController();
-        billboardController.setAdDisplayer(displayer);
+        AdDisplayerController adDisplayerController = new AdDisplayerController();
+        adDisplayerController.setAdDisplayer(displayer);
         ObjectName name = null;
 
         try {
             name = new ObjectName("AdDisplayerController:name=AdDisplayerController");
-            mbs.registerMBean(billboardController, name);
+            mbs.registerMBean(adDisplayerController, name);
         } catch(Exception e) {
             e.printStackTrace();
         }

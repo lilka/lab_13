@@ -2,10 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4bcc44d2-91ff-4927-8852-75a6794f0822" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/AdDisplayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/AdDisplayer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/AdDisplayerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/AdDisplayerController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/AdDisplayerControllerMBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/AdDisplayerControllerMBean.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/AdDisplayer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/AdDisplayer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/AdDisplayerController$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/AdDisplayerController$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/AdDisplayerController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/AdDisplayerController.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -31,11 +34,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/AdDisplayer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="146">
-              <caret line="26" column="30" selection-start-line="26" selection-start-column="30" selection-end-line="26" selection-end-column="30" />
+            <state relative-caret-position="378">
+              <caret line="68" column="7" selection-start-line="68" selection-start-column="7" selection-end-line="68" selection-end-column="7" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -47,7 +50,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/App.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="315">
-              <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+              <caret line="21" selection-start-line="21" selection-end-line="21" />
             </state>
           </provider>
         </entry>
@@ -55,13 +58,21 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/AdDisplayerChangeEvent.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="8" selection-start-line="8" selection-end-line="8" />
+            <state relative-caret-position="255">
+              <caret line="19" column="2" selection-start-line="19" selection-start-column="2" selection-end-line="29" selection-end-column="5" />
+              <folding>
+                <element signature="e#606#607#0" expanded="true" />
+                <element signature="e#648#649#0" expanded="true" />
+                <element signature="e#686#687#0" expanded="true" />
+                <element signature="e#720#721#0" expanded="true" />
+                <element signature="e#761#762#0" expanded="true" />
+                <element signature="e#798#799#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/AdDisplayerChangeEventListener.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="30">
@@ -73,14 +84,12 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/AdDisplayerController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="747">
-              <caret line="68" column="28" selection-start-line="68" selection-start-column="16" selection-end-line="68" selection-end-column="28" />
+            <state relative-caret-position="1065">
+              <caret line="71" lean-forward="true" selection-start-line="71" selection-end-line="71" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#906#1092#0" expanded="true" />
-                <element signature="e#1091#1092#0" expanded="true" />
-                <element signature="e#2082#2271#0" expanded="true" />
-                <element signature="e#2270#2271#0" expanded="true" />
+                <element signature="e#998#999#0" expanded="true" />
+                <element signature="e#1042#1043#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -119,6 +128,7 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>bil</find>
+      <find>currentA</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -130,12 +140,12 @@
         <option value="$PROJECT_DIR$/src/main/java/Ad.java" />
         <option value="$PROJECT_DIR$/src/main/java/AdDisplayerChangeEventListener.java" />
         <option value="$PROJECT_DIR$/src/main/java/Agent.java" />
-        <option value="$PROJECT_DIR$/src/main/java/AdDisplayerChangeEvent.java" />
-        <option value="$PROJECT_DIR$/src/main/java/AdDisplayerController.java" />
         <option value="$PROJECT_DIR$/src/main/java/AdDisplayerControllerMBean.java" />
         <option value="$PROJECT_DIR$/src/main/java/Client.java" />
         <option value="$PROJECT_DIR$/src/main/java/App.java" />
+        <option value="$PROJECT_DIR$/src/main/java/AdDisplayerChangeEvent.java" />
         <option value="$PROJECT_DIR$/src/main/java/AdDisplayer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/AdDisplayerController.java" />
       </list>
     </option>
   </component>
@@ -189,7 +199,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1560112540291" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1560113805591" />
     <property name="settings.editor.selected.configurable" value="project.jformdesigner" />
   </component>
   <component name="RunDashboard">
@@ -233,9 +243,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="777" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2536349" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2536349" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -244,7 +253,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.35036495" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.35036495" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -268,7 +277,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/AdDisplayerController.java</url>
-          <line>84</line>
+          <line>62</line>
           <properties />
           <option name="timeStamp" value="1" />
         </line-breakpoint>
@@ -283,13 +292,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="13" selection-start-column="13" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/AdDisplayerChangeEventListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
         </state>
       </provider>
     </entry>
@@ -313,6 +315,38 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/App.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/AdDisplayerChangeEvent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="19" column="2" selection-start-line="19" selection-start-column="2" selection-end-line="29" selection-end-column="5" />
+          <folding>
+            <element signature="e#606#607#0" expanded="true" />
+            <element signature="e#648#649#0" expanded="true" />
+            <element signature="e#686#687#0" expanded="true" />
+            <element signature="e#720#721#0" expanded="true" />
+            <element signature="e#761#762#0" expanded="true" />
+            <element signature="e#798#799#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/AdDisplayer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="68" column="7" selection-start-line="68" selection-start-column="7" selection-end-line="68" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/AdDisplayerControllerMBean.java">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -322,39 +356,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/AdDisplayerController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="747">
-          <caret line="68" column="28" selection-start-line="68" selection-start-column="16" selection-end-line="68" selection-end-column="28" />
+        <state relative-caret-position="1065">
+          <caret line="71" lean-forward="true" selection-start-line="71" selection-end-line="71" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#906#1092#0" expanded="true" />
-            <element signature="e#1091#1092#0" expanded="true" />
-            <element signature="e#2082#2271#0" expanded="true" />
-            <element signature="e#2270#2271#0" expanded="true" />
+            <element signature="e#998#999#0" expanded="true" />
+            <element signature="e#1042#1043#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/AdDisplayerChangeEvent.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/AdDisplayerChangeEventListener.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/App.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/AdDisplayer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="146">
-          <caret line="26" column="30" selection-start-line="26" selection-start-column="30" selection-end-line="26" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="30">
+          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
         </state>
       </provider>
     </entry>

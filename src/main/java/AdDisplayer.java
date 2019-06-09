@@ -3,8 +3,7 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.ArrayList;
-import java.util.LinkedList;
-import java.util.List;
+
 import java.util.Random;
 
 public class AdDisplayer extends JPanel {
@@ -16,7 +15,6 @@ public class AdDisplayer extends JPanel {
 
 
     private java.util.List<Ad> addsList;
-    private List<AdDisplayerChangeEventListener> adDisplayerChangeEventListeners;
     JLabel textPane;
     Ad ad;
     Timer timer;
@@ -39,7 +37,6 @@ public class AdDisplayer extends JPanel {
         textPane.setText(addsList.get(0).getText());
         currentAdd = 0;
 
-        adDisplayerChangeEventListeners = new LinkedList<AdDisplayerChangeEventListener>();
         this.setBorder(BorderFactory.createLineBorder(Color.BLACK));
         this.setPreferredSize(new Dimension(500,100));
         this.setBackground(on);
@@ -66,15 +63,13 @@ public class AdDisplayer extends JPanel {
 
     public void changeTime(int time) {
         this.TIME = time;
-        generateDisplayerChangedEvent(currentAdd, true, false, true);
 
     }
 
     public void setAddText(String text, int adNumb) {
         if (currentAdd != -1 && !addsList.isEmpty() && adNumb>-1 && adNumb<addsList.size()) {
-            addsList.get(currentAdd).setText(text);
-            generateDisplayerChangedEvent(currentAdd, true, true, false);
-            textPane.setText(addsList.get(currentAdd).getText());
+            addsList.get(adNumb).setText(text);
+            textPane.setText(addsList.get(adNumb).getText());
             revalidate();
         }
     }
@@ -84,7 +79,6 @@ public class AdDisplayer extends JPanel {
         if (currentColor.equals(off)) {
             setBackground(on);
             textPane.setText(addsList.get(0).getText());
-            generateDisplayerChangedEvent(currentAdd, true, false, false);
             timer.start();
         }
     }
@@ -95,20 +89,9 @@ public class AdDisplayer extends JPanel {
             setBackground(off);
             textPane.setText(null);
             timer.stop();
-            generateDisplayerChangedEvent(currentAdd, false, false, false);
         }
     }
 
-    public void addAdDisplayerChangeEventListener(AdDisplayerChangeEventListener listener) {
-        this.adDisplayerChangeEventListeners.add(listener);
-    }
-
-    private void generateDisplayerChangedEvent(Integer addNumber, boolean wasTurnedOn, boolean textWasChanged, boolean timeWasChanged) {
-        AdDisplayerChangeEvent event = new AdDisplayerChangeEvent(addNumber, wasTurnedOn, textWasChanged, timeWasChanged);
-        for (AdDisplayerChangeEventListener listener : adDisplayerChangeEventListeners) {
-            listener.onDisplayerChangedEvent(event);
-        }
-    }
 
     public void addNewAd(String text){
         Ad ad1=new Ad(text);
